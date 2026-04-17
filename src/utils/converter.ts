@@ -226,7 +226,7 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
     'ත්ර': ';a%',
 
     // ට + Rakaransaya
-    'ට්රි': 'gs%', 'ට්රී': 'gS%', 'ට්රා': 'gd%', 'ට්රු': 'gq%', 'ට්රූ': 'gQ%',
+    'ට්රි': 'á%', 'ට්රී': 'á%', 'ට්රා': 'gd%', 'ට්රු': 'gq%', 'ට්රූ': 'gQ%',
     'ට්ර෩': 'fg%', 'ට්රේ': 'fga%', 'ට්රෝ': 'fg%da', 'ට්රො': 'fg%d',
     'ට්ර': 'ga%',
 
@@ -272,7 +272,7 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
     // ප + Rakaransaya
     'ප්රි': 'ms%', 'ප්රී': 'mS%', 'ප්රා': 'md%', 'ප්රු': 'mq%', 'ප්රූ': 'mQ%',
     'ප්ර෩': 'fm%', 'ප්රේ': 'fma%', 'ප්රෝ': 'fm%da', 'ප්රො': 'fm%d',
-    'ප්ර': 'ma%',
+    'ප්ර': 'm%',
 
     // ශ + Rakaransaya (more forms)
     'ශ්රි': 'Ys%', 'ශ්රෙ': 'fY%', 'ශ්රෝ': 'fY%da', 'ශ්රො': 'fY%d', 'ශ්රේ': 'fYa%',
