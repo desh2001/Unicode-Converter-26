@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Copy, Trash2, BookOpen, X, Check, Zap } from 'lucide-react';
-import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-motion';
+import { motion, AnimatePresence, useMotionValue } from 'framer-motion';
 import { convertSinglishToUnicode, convertUnicodeToLegacy, restoreLegacyPunctuation, consonants, independentVowels } from './utils/converter';
 import logo from './assets/akshara.logo.png';
 
