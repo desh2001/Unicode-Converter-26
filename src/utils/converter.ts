@@ -571,7 +571,7 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
     'හ': 'y',
     'ඥ': '{',
     'ඳ': '|',
-    'ක්ෂ': 'Ì',
+    'ක්ෂ': 'laI',
     'ැ': 'e',
     'ෙ': 'f',
     'ු': 'q',

@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Bindumathi';
+  src: url('./assets/4u-bindumathi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 @theme {
   --color-primary: #8b5cf6;
   --color-primary-hover: #7c3aed;
