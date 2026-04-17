@@ -189,25 +189,7 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
 
     // Rakaransaya (්‍ර) + vowel combinations not covered by extracted map
     // Format: consonant + aS% = cons + Diga Ispilla + Rakaransaya in FM Abhaya
-    'ශ්රී': 'YS%', 'ශ්රි': 'Ys%', 'ශ්රා': 'Yd%', 'ශ්රු': 'Yq%', 'ශ්රූ': 'YQ%', 'ශ්රැ': 'Ye%',
-    'ශ්ර': 'Ya%',
-    'ස්රී': 'iS%', 'ස්රි': 'is%', 'ස්රා': 'id%', 'ස්රු': 'iq%', 'ස්රූ': 'iQ%',
-    'ස්ර': 'ia%',
-    'ප්රී': 'mS%', 'ප්රි': 'ms%', 'ප්රා': 'md%', 'ප්රු': 'mq%', 'ප්රූ': 'mQ%',
-    'ප්ර': 'ma%',
-    'න්රී': 'kS%', 'න්රා': 'kd%',
-    'න්ර': 'ka%',
-    'ම්රී': 'uS%', 'ම්රා': 'ud%',
-    'ම්ර': 'ua%',
-    'හ්රී': 'yS%', 'හ්රා': 'yd%',
-    'හ්ර': 'ya%',
-    'ව්රී': 'jS%', 'ව්රා': 'jd%',
-    'ව්ර': 'ja%',
-    'ල්රා': ',d%', 'ල්රී': ',S%',
-    'ල්ර': ',a%',
-    'ඛ්රී': 'LS%', 'ඛ්රා': 'Ld%',
-    'ඛ්ර': 'La%',
-    'ශ්‍රී': 'YS%', 'ශ්‍රේ': 'fYa%',
+
 
     // Rakaransaya (ර්‍) + vowel combinations for common consonants
     // Pattern: [cons_char][vowel_char][%]   for ා ి ී ු ූ forms
@@ -228,7 +210,7 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
     // ත + Rakaransaya
     'ත්රි': ';s%', 'ත්රී': ';S%', 'ත්රා': ';d%', 'ත්රු': ';q%', 'ත්රූ': ';Q%',
     'ත්රෙ': 'f;%', 'ත්රේ': 'f;a%', 'ත්රෝ': 'f;%da', 'ත්රො': 'f;%d',
-    'ත්ර': ';a%',
+    'ත්ර': ';%',
 
     // ට + Rakaransaya
     'ට්රි': 'á%', 'ට්රී': 'á%', 'ට්රා': 'gd%', 'ට්රු': 'gq%', 'ට්රූ': 'gQ%',
@@ -460,7 +442,6 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
     'ඈ': 'wE',
     'ඌ': 'W!',
     'ඖ': 'T!',
-    'ඒ': 'ta',
     'ඕ': '´',
     'ඳි': '¢',
     'ඳී': '£',
