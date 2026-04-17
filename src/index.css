@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 @font-face {
   font-family: 'Bindumathi';
@@ -6,61 +7,53 @@
   font-weight: normal;
   font-style: normal;
 }
-@theme {
-  --color-primary: #8b5cf6;
-  --color-primary-hover: #7c3aed;
-  
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@layer base {
-  :root {
-    /* Soft dark SaaS theme */
-    --bg-color: #0f172a; /* Slate 900 base */
-    --text-color: #f8fafc;
-    --text-muted: #cbd5e1;
-    --glass-bg: rgba(30, 41, 59, 0.4);
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --glass-shadow: rgba(0, 0, 0, 0.3);
-  }
-
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: var(--font-sans);
-    margin: 0;
-    overflow-x: hidden;
-  }
+html, body, #root {
+  height: 100%;
 }
 
-@layer utilities {
-  .glass {
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
-    box-shadow: 0 8px 32px 0 var(--glass-shadow);
-  }
-  
-  .glass-input {
-    background: rgba(15, 23, 42, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    color: #f8fafc;
-    transition: all 0.3s ease;
-  }
-  
-  .glass-input:focus, .glass-input:hover {
-    background: rgba(30, 41, 59, 0.6);
-    border-color: rgba(139, 92, 246, 0.4);
-    box-shadow: 0 0 15px rgba(139, 92, 246, 0.1);
-  }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #060818;
+  color: #e2e8f0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  .mesh-bg-container {
-    position: fixed;
-    top: 0; left: 0; width: 100vw; height: 100vh;
-    z-index: 0;
-    overflow: hidden;
-    background-color: #0f172a;
-    pointer-events: none;
-  }
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.5);
+}
+
+/* Textarea placeholder */
+textarea::placeholder {
+  color: rgba(148, 163, 184, 0.3);
+}
+
+/* Textarea focus glow transition */
+textarea {
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(139, 92, 246, 0.35);
+  color: #fff;
 }

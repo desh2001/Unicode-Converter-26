@@ -180,6 +180,11 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
   // e.g. ශ්‍රී (with ZWJ) becomes ශ්රී (without) before lookup
   text = text.replace(/\u200D/g, '');
 
+  // Shield ASCII printable non-space characters (0x21–0x7E) from FM Abhaya's glyph
+  // remapping by temporarily moving them to the Unicode Private Use Area (PUA).
+  // e.g. '.' (U+002E) → U+E02E so the legacyMap never matches it as ග.
+  text = text.replace(/[\x21-\x7E]/g, m => String.fromCodePoint(0xE000 + m.codePointAt(0)!));
+
   const legacyMap: Record<string, string> = {
 
     // Rakaransaya (්‍ර) + vowel combinations not covered by extracted map
@@ -609,3 +614,10 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
 
   return text;
 };
+
+/**
+ * Restores PUA-marked punctuation back to original ASCII characters.
+ * Use this before copying the legacy string to clipboard.
+ */
+export const restoreLegacyPunctuation = (text: string): string =>
+  text.replace(/[\uE021-\uE07E]/g, c => String.fromCodePoint(c.codePointAt(0)! - 0xE000));
