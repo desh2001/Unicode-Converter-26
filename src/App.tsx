@@ -102,7 +102,7 @@ function App() {
               සි
             </div>
             <h1 className="text-xl md:text-2xl font-bold text-slate-100 tracking-tight">
-              Sinhala <span className="text-indigo-400 font-medium">Converter</span>
+              Akshara
             </h1>
           </div>
           <div className="flex items-center gap-3">
