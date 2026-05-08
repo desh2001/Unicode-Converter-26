@@ -322,10 +322,10 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
     'ට්ය': 'gH', 'ට්‍ය': 'gH',
 
     // ඩ + ය (dya)
-    'ඩ්‍යා': 'vHd', 'ඩ්‍යා': 'vHd',
-    'ඩ්‍යු': 'vHq', 'ඩ්‍යු': 'vHq',
-    'ඩ්‍යූ': 'vHQ', 'ඩ්‍යූ': 'vHQ',
-    'ඩ්‍ය': 'vH', 'ඩ්‍ය': 'vH',
+    'ඩ්යා': 'vHd', 'ඩ්‍යා': 'vHd',
+    'ඩ්යු': 'vHq', 'ඩ්‍යු': 'vHq',
+    'ඩ්යූ': 'vHQ', 'ඩ්‍යූ': 'vHQ',
+    'ඩ්ය': 'vH', 'ඩ්‍ය': 'vH',
 
     // ත + ය (thya) - Very Common (සත්‍ය, නිත්‍ය)
     'ත්යා': ';Hd', 'ත්‍යා': ';Hd',
@@ -382,10 +382,10 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
     'ව්ය': 'jH', 'ව්‍ය': 'jH',
 
     // ශ + ය (shya)
-    'ශ්‍යා': 'YHd', 'ශ්‍යා': 'YHd',
-    'ශ්‍යු': 'YHq', 'ශ්‍යු': 'YHq',
-    'ශ්‍යූ': 'YHQ', 'ශ්‍යූ': 'YHQ',
-    'ශ්‍ය': 'YH', 'ශ්‍ය': 'YH',
+    'ශ්යා': 'YHd', 'ශ්‍යා': 'YHd',
+    'ශ්යු': 'YHq', 'ශ්‍යු': 'YHq',
+    'ශ්යූ': 'YHQ', 'ශ්‍යූ': 'YHQ',
+    'ශ්ය': 'YH', 'ශ්‍ය': 'YH',
 
     // ෂ + ය (Shya)
     'ෂ්යා': 'IHd', 'ෂ්‍යා': 'IHd',
@@ -619,7 +619,6 @@ export const convertUnicodeToLegacy = (unicodeText: string): string => {
     'ව්': 'õ',
     'ඹී': 'ö',
     'ඳු': '÷',
-    'ද්ර': 'ø',
     'වී': 'ù',
     'වි': 'ú',
     'ඞී': 'ü',
